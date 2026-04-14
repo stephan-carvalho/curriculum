@@ -7,122 +7,110 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ["Inter", "system-ui", "sans-serif"]
-          },
-          colors: {
-            ink: "#0f172a",
-            accent: "#2563eb"
-          },
-          boxShadow: {
-            soft: "0 24px 80px rgba(15, 23, 42, .14)"
+            title: ["Geist", "sans-serif"],
+            body: ["Geist Mono", "monospace"]
           }
         }
       }
     };
   </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="min-h-screen bg-slate-950 text-slate-800 font-sans overflow-x-hidden">
+<body class="min-h-screen bg-neutral-950 text-slate-800 font-body">
 
-  <div class="fixed inset-0 -z-10">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#1d4ed8,transparent_35%),radial-gradient(circle_at_bottom_right,#0ea5e9,transparent_30%),linear-gradient(135deg,#020617,#0f172a_55%,#111827)]"></div>
-    <div class="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:48px_48px]"></div>
-  </div>
+  <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,#1e40af_0%,transparent_35%),linear-gradient(135deg,#020617,#0f172a_60%,#111827)]"></div>
 
   <main class="max-w-6xl mx-auto px-5 py-8 md:py-12">
-    <section class="resume-shell rounded-[2rem] overflow-hidden shadow-soft border border-white/15 bg-white/90 backdrop-blur-xl">
+    <section class="bg-white/95 border border-white/10 shadow-2xl rounded-sm overflow-hidden">
 
-      <header class="relative overflow-hidden bg-slate-950 text-white p-8 md:p-12">
-        <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-28 -left-20 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl"></div>
+      <header class="relative bg-neutral-950 text-white px-7 py-10 md:px-12 md:py-14 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:42px_42px]"></div>
+        <div class="absolute right-0 top-0 h-full w-2/5 bg-gradient-to-l from-blue-600/30 to-transparent"></div>
 
-        <div class="relative z-10 grid lg:grid-cols-[1fr_auto] gap-8 items-center">
-          <div class="animate-rise">
-            <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-blue-100">
+        <div class="relative z-10 grid lg:grid-cols-[1fr_auto] gap-8 items-end">
+          <div>
+            <p class="font-title text-xs uppercase tracking-[0.35em] text-blue-300 mb-5">
               Currículo Profissional
             </p>
 
-            <h1 class="mt-6 text-4xl md:text-6xl font-black tracking-tight leading-[1.02]">
-              Álvaro Stephan<br class="hidden md:block" />
+            <h1 class="font-title text-4xl md:text-6xl font-black leading-[1] tracking-tight">
+              Álvaro Stephan<br />
               <span class="text-blue-300">Eustaquio de Carvalho</span>
             </h1>
 
-            <p class="mt-5 max-w-2xl text-slate-300 text-lg leading-relaxed">
+            <div class="mt-6 h-px w-28 bg-blue-400"></div>
+
+            <p class="mt-6 max-w-2xl text-slate-300 leading-relaxed">
               Atendimento ao cliente · Operação · Vendas · Apoio logístico
             </p>
           </div>
 
-          <div class="animate-rise delay-150 grid gap-3 text-sm">
-            <a class="contact-pill" href="https://www.google.com/maps/search/São+Paulo+SP" target="_blank">📍 São Paulo – SP</a>
-            <a class="contact-pill" href="tel:+5511919310062">📞 (11) 91931-0062</a>
-            <a class="contact-pill" href="mailto:stephancarvalho26@gmail.com">✉️ stephancarvalho26@gmail.com</a>
+          <div class="grid gap-3 text-sm">
+            <p class="contact-item">📍 São Paulo – SP</p>
+            <a class="contact-item" href="tel:+5511919310062">📞 (11) 91931-0062</a>
+            <a class="contact-item" href="mailto:stephancarvalho26@gmail.com">✉️ stephancarvalho26@gmail.com</a>
           </div>
         </div>
       </header>
 
       <div class="p-6 md:p-10 grid lg:grid-cols-[340px_1fr] gap-8">
         <aside class="space-y-5">
-          <section class="glass-card animate-rise">
+          <section class="card">
             <h2>Objetivo</h2>
             <p>
-              Atuar em funções de atendimento ao cliente, operação, vendas e apoio logístico,
-              contribuindo com organização, agilidade, boa comunicação e foco em solução de problemas.
+              Atuar em funções de atendimento ao cliente, operação, vendas e apoio logístico, contribuindo com organização, agilidade, boa comunicação e foco em solução de problemas. Busco uma oportunidade para somar com responsabilidade, dedicação e facilidade de adaptação a diferentes rotinas de trabalho.
             </p>
           </section>
 
-          <section class="glass-card animate-rise">
-            <h2>Formação</h2>
+          <section class="card">
+            <h2>Formação Acadêmica</h2>
             <p class="font-bold text-slate-950">Ensino Médio Integrado ao Técnico em Informática</p>
-            <p>ETEC Paulistano</p>
-            <p class="text-slate-500 font-medium">Conclusão em 2017</p>
+            <p>ETEC Paulistano – Conclusão em 2017</p>
           </section>
 
-          <section class="glass-card animate-rise">
-            <h2>Competências</h2>
+          <section class="card">
+            <h2>Habilidades</h2>
             <div class="flex flex-wrap gap-2">
-              <span>Atendimento</span>
-              <span>Comunicação</span>
-              <span>Vendas</span>
-              <span>Metas</span>
-              <span>Estoque</span>
-              <span>Reposição</span>
-              <span>Organização</span>
-              <span>Equipe</span>
-              <span>Excel</span>
-              <span>Google Sheets</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+              <span>Atendimento ao cliente e relacionamento com o público</span>
+              <span>Comunicação clara, cordial e objetiva</span>
+              <span>Facilidade para lidar com situações difíceis e ambientes de pressão</span>
+              <span>Organização, disciplina e padronização de processos</span>
+              <span>Trabalho em equipe e apoio à coordenação de atividades</span>
+              <span>Versatilidade para atuar em diferentes funções</span>
+              <span>Agilidade operacional e disposição para rotinas dinâmicas</span>
+              <span>Resolução prática de problemas</span>
+              <span>Controle de estoque, reposição e recebimento de mercadorias</span>
+              <span>Vendas, abordagem ao cliente e atuação com metas</span>
+              <span>Excel e Google Sheets em nível intermediário</span>
+              <span>Noções de tecnologia e informática</span>
             </div>
           </section>
 
-          <section class="glass-card animate-rise">
-            <h2>Informações adicionais</h2>
+          <section class="card">
+            <h2>Informações Adicionais</h2>
             <ul>
-              <li>Disponibilidade para funções operacionais, atendimento, vendas e logística.</li>
-              <li>Facilidade de aprendizado e adaptação.</li>
-              <li>Perfil comprometido, proativo e orientado à eficiência.</li>
+              <li>Disponibilidade para atuar em funções operacionais, atendimento, vendas e apoio logístico</li>
+              <li>Facilidade de aprendizado e adaptação a novas rotinas</li>
+              <li>Interesse em crescer profissionalmente e contribuir com resultados</li>
+              <li>Perfil comprometido, proativo e orientado à eficiência</li>
             </ul>
           </section>
         </aside>
 
         <section class="space-y-8">
-          <section class="content-card animate-rise">
+          <section class="content-card">
             <h2 class="section-title">Resumo Profissional</h2>
-            <p class="leading-relaxed text-slate-700">
-              Profissional com experiência em atendimento ao público, vendas, organização operacional,
-              estoque, recebimento de mercadorias e apoio geral ao funcionamento do negócio. Possui
-              vivência em ambientes dinâmicos e exigentes, com atuação em comércio familiar, feira,
-              telemarketing, estoque e serviços operacionais.
+            <p>
+              Profissional com experiência em atendimento ao público, vendas, organização operacional, estoque, recebimento de mercadorias e apoio geral ao funcionamento do negócio. Possui vivência em ambientes dinâmicos e exigentes, com atuação em comércio familiar, feira, telemarketing, estoque e serviços operacionais. Destaca-se pela versatilidade, facilidade para aprender, disciplina, boa postura no atendimento e capacidade de lidar com diferentes perfis de clientes, inclusive em situações de pressão. Tem perfil proativo, organizado e orientado à padronização de processos para melhorar a eficiência no dia a dia.
             </p>
           </section>
 
@@ -134,60 +122,65 @@
                 <h3>Comércio Familiar – Pizzaria</h3>
                 <p class="role">Auxiliar Geral / Atendimento / Operação · 2020 – 2025</p>
                 <ul>
-                  <li>Atuação multifuncional no funcionamento diário do negócio.</li>
-                  <li>Atendimento ao cliente no salão e suporte à experiência do público.</li>
-                  <li>Preparação de pizzas, organização da cozinha e apoio à produção.</li>
-                  <li>Recebimento, conferência e organização de mercadorias.</li>
-                  <li>Limpeza, conservação e padronização do ambiente de trabalho.</li>
+                  <li>Atuação multifuncional no funcionamento diário do negócio, assumindo responsabilidades em diferentes áreas conforme a necessidade da operação.</li>
+                  <li>Atendimento ao cliente no salão, apoio no serviço de mesas e suporte direto à experiência do público.</li>
+                  <li>Preparação de pizzas, organização da cozinha e apoio à produção em ambiente de ritmo intenso.</li>
+                  <li>Recebimento, conferência e organização de mercadorias, contribuindo para o controle dos insumos e continuidade da operação.</li>
+                  <li>Limpeza, conservação e padronização do ambiente de trabalho, com atenção à organização e eficiência.</li>
+                  <li>Desenvolvimento de visão prática do negócio, entendendo rotinas de atendimento, produção, reposição e suporte operacional.</li>
                 </ul>
               </article>
 
               <article>
-                <h3>Servente de Pedreiro</h3>
-                <p class="role">Informal · 2019 – 2020 · 6 meses</p>
+                <h3>Servente de Pedreiro (Informal)</h3>
+                <p class="role">2019 – 2020 | 6 meses</p>
                 <ul>
-                  <li>Apoio em atividades operacionais de obra.</li>
-                  <li>Organização de materiais e suporte à execução dos serviços.</li>
-                  <li>Rotina com esforço físico, disciplina e responsabilidade.</li>
+                  <li>Apoio em atividades operacionais de obra, com organização de materiais e suporte à execução dos serviços.</li>
+                  <li>Atuação em rotina de esforço físico, disciplina e cumprimento de tarefas práticas com responsabilidade.</li>
+                  <li>Colaboração com a equipe para manter o andamento do trabalho com agilidade e apoio contínuo.</li>
                 </ul>
               </article>
 
               <article>
                 <h3>Feirante</h3>
-                <p class="role">2019 · 3 meses</p>
+                <p class="role">2019 | 3 meses</p>
                 <ul>
-                  <li>Montagem e desmontagem de barracas.</li>
-                  <li>Atendimento direto ao público e vendas de frutas e legumes.</li>
-                  <li>Atuação com agilidade em ambiente de alta movimentação.</li>
+                  <li>Montagem e desmontagem de barracas, organização do espaço de trabalho e exposição de produtos.</li>
+                  <li>Atendimento direto ao público e atuação em vendas de frutas e legumes, com abordagem ativa e cordial.</li>
+                  <li>Trabalho com metas e foco em resultado, conciliando agilidade, atenção ao cliente e dinamismo no atendimento.</li>
+                  <li>Experiência em ambiente de alta movimentação, exigindo disposição, comunicação e rapidez.</li>
                 </ul>
               </article>
 
               <article>
                 <h3>Operador de Telemarketing Ativo – Cobrança</h3>
-                <p class="role">2018 · 3 meses</p>
+                <p class="role">2018 | 3 meses</p>
                 <ul>
-                  <li>Negociação de dívidas de clientes do banco Santander.</li>
-                  <li>Comunicação persuasiva, escuta ativa e argumentação.</li>
-                  <li>Atendimento sob pressão com foco em metas.</li>
+                  <li>Atuação com negociação de dívidas de clientes do banco Santander, com foco em metas e desempenho.</li>
+                  <li>Desenvolvimento de comunicação persuasiva, escuta ativa e argumentação voltada à negociação.</li>
+                  <li>Vivência em atendimento sob pressão, com necessidade de controle emocional, disciplina e constância de resultados.</li>
+                  <li>Aprimoramento da capacidade de lidar com objeções e diferentes perfis de clientes.</li>
                 </ul>
               </article>
 
               <article>
-                <h3>Auxiliar de Estoque</h3>
-                <p class="role">Informal · 2017 – 2018</p>
+                <h3>Auxiliar de Estoque (Informal)</h3>
+                <p class="role">2017 – 2018</p>
                 <ul>
-                  <li>Controle e organização de estoque de acessórios para celular.</li>
-                  <li>Transporte, abastecimento e reposição de mercadorias.</li>
-                  <li>Apoio à rotina logística e operacional.</li>
+                  <li>Controle e organização de estoque de acessórios para celular no centro de São Paulo.</li>
+                  <li>Transporte e abastecimento de mercadorias para reposição das lojas.</li>
+                  <li>Apoio à rotina logística e operacional, contribuindo para manter os pontos de venda abastecidos e organizados.</li>
+                  <li>Experiência prática com movimentação de produtos, responsabilidade e ritmo de trabalho intenso.</li>
                 </ul>
               </article>
 
               <article>
-                <h3>Freelancer – Projetos de Programação Web</h3>
-                <p class="role">Informal · Períodos variados</p>
+                <h3>Freelancer – Projetos de Programação Web (Informal)</h3>
+                <p class="role">Períodos variados</p>
                 <ul>
                   <li>Participação em projetos pontuais de desenvolvimento web.</li>
-                  <li>Conhecimentos em HTML, CSS, JavaScript, Next.js e noções básicas de Golang.</li>
+                  <li>Conhecimentos aplicados em HTML, CSS, JavaScript, Next.js e noções básicas de Golang.</li>
+                  <li>Vivência complementar em tecnologia, organização de tarefas e solução de problemas.</li>
                 </ul>
               </article>
             </div>
@@ -197,107 +190,91 @@
     </section>
   </main>
 
-  <button onclick="window.print()" class="print-btn">
-    <span>📄</span>
-    Imprimir / PDF
-  </button>
+  <div class="fixed right-5 bottom-5 z-50 flex gap-2">
+    <a
+      href="https://wa.me/5511919310062"
+      target="_blank"
+      class="action-btn bg-emerald-600 hover:bg-emerald-700">
+      WhatsApp
+    </a>
 
-  <script>
-    const animatedItems = document.querySelectorAll(".animate-rise, .timeline article");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.12 });
-
-    animatedItems.forEach(item => observer.observe(item));
-  </script>
+    <button
+      onclick="window.print()"
+      class="action-btn bg-blue-700 hover:bg-blue-800">
+      Imprimir / PDF
+    </button>
+  </div>
 
   <style>
-    html {
-      scroll-behavior: smooth;
+    h1, h2, h3, .section-title {
+      font-family: "Geist", sans-serif;
     }
 
-    .contact-pill {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      padding: .8rem 1rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .1);
-      border: 1px solid rgba(255, 255, 255, .15);
-      color: #e0f2fe;
-      font-weight: 700;
-      backdrop-filter: blur(12px);
-      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+    p, li, a, span, button {
+      font-family: "Geist Mono", monospace;
     }
 
-    .contact-pill:hover {
+    .contact-item {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.07);
+      color: #e2e8f0;
+      padding: .75rem .9rem;
+      border-radius: .125rem;
+      transition: .25s ease;
+    }
+
+    .contact-item:hover {
+      background: rgba(255,255,255,.13);
+      border-color: rgba(147,197,253,.7);
       transform: translateY(-2px);
-      background: rgba(255, 255, 255, .16);
-      border-color: rgba(147, 197, 253, .7);
     }
 
-    .glass-card,
+    .card,
     .content-card,
     .timeline article {
-      background: rgba(255, 255, 255, .78);
-      border: 1px solid rgba(226, 232, 240, .9);
-      border-radius: 1.5rem;
-      box-shadow: 0 14px 38px rgba(15, 23, 42, .06);
-      backdrop-filter: blur(16px);
-      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-    }
-
-    .glass-card,
-    .content-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: .125rem;
       padding: 1.35rem;
+      box-shadow: 0 12px 35px rgba(15, 23, 42, .06);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      animation: fadeUp .7s ease both;
     }
 
-    .glass-card:hover,
+    .card:hover,
     .content-card:hover,
     .timeline article:hover {
       transform: translateY(-4px);
-      box-shadow: 0 22px 55px rgba(15, 23, 42, .11);
-      border-color: #bfdbfe;
+      border-color: #93c5fd;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, .12);
     }
 
-    .glass-card h2,
+    .card h2,
     .section-title {
-      font-size: .82rem;
+      font-size: .85rem;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: .16em;
       color: #1d4ed8;
+      margin-bottom: .9rem;
     }
 
-    .glass-card h2 {
-      margin-bottom: .85rem;
+    .card p,
+    .card li,
+    .content-card p,
+    .timeline li {
+      font-size: .9rem;
+      line-height: 1.75;
     }
 
-    .glass-card p,
-    .glass-card li {
-      font-size: .95rem;
-      line-height: 1.65;
-    }
-
-    .glass-card span {
-      background: linear-gradient(135deg, #eff6ff, #ffffff);
+    .card span {
+      background: #eff6ff;
       border: 1px solid #dbeafe;
       color: #1e3a8a;
-      padding: .45rem .72rem;
-      border-radius: 999px;
-      font-size: .82rem;
-      font-weight: 800;
-      transition: transform .2s ease, border-color .2s ease;
-    }
-
-    .glass-card span:hover {
-      transform: scale(1.04);
-      border-color: #60a5fa;
+      padding: .4rem .6rem;
+      border-radius: .125rem;
+      font-size: .78rem;
+      font-weight: 700;
     }
 
     ul {
@@ -307,9 +284,8 @@
 
     li {
       position: relative;
-      padding-left: 1.15rem;
+      padding-left: 1rem;
       margin-bottom: .45rem;
-      line-height: 1.6;
     }
 
     li::before {
@@ -317,99 +293,82 @@
       position: absolute;
       left: 0;
       top: .72em;
-      width: .42rem;
-      height: .42rem;
-      border-radius: 999px;
+      width: .35rem;
+      height: .35rem;
       background: #2563eb;
+      border-radius: .125rem;
     }
 
     .timeline {
       position: relative;
       display: grid;
       gap: 1.25rem;
-      padding-left: 1.3rem;
+      padding-left: 1.25rem;
     }
 
     .timeline::before {
       content: "";
       position: absolute;
-      left: .18rem;
+      left: .15rem;
       top: .5rem;
       bottom: .5rem;
-      width: 3px;
-      border-radius: 999px;
-      background: linear-gradient(to bottom, #2563eb, #93c5fd, transparent);
+      width: 2px;
+      background: linear-gradient(to bottom, #2563eb, #bfdbfe, transparent);
     }
 
     .timeline article {
       position: relative;
-      padding: 1.45rem;
     }
 
     .timeline article::before {
       content: "";
       position: absolute;
-      left: -1.55rem;
-      top: 1.6rem;
-      width: .85rem;
-      height: .85rem;
+      left: -1.52rem;
+      top: 1.45rem;
+      width: .7rem;
+      height: .7rem;
       background: #2563eb;
-      border: 3px solid white;
-      border-radius: 999px;
-      box-shadow: 0 0 0 4px #dbeafe;
+      border: 2px solid white;
+      border-radius: .125rem;
+      box-shadow: 0 0 0 3px #dbeafe;
     }
 
     .timeline h3 {
-      font-size: 1.12rem;
+      font-size: 1.08rem;
       font-weight: 900;
       color: #0f172a;
-      letter-spacing: -.02em;
     }
 
     .role {
       color: #2563eb;
       font-weight: 800;
-      margin: .25rem 0 .85rem;
-      font-size: .95rem;
+      margin: .25rem 0 .8rem;
+      font-size: .88rem;
     }
 
-    .print-btn {
-      position: fixed;
-      right: 1.25rem;
-      bottom: 1.25rem;
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    .action-btn {
       color: white;
-      font-weight: 900;
-      padding: .9rem 1.2rem;
-      border-radius: 999px;
-      box-shadow: 0 16px 40px rgba(37, 99, 235, .35);
-      transition: transform .25s ease, box-shadow .25s ease;
-      z-index: 50;
+      font-weight: 800;
+      padding: .85rem 1rem;
+      border-radius: .125rem;
+      box-shadow: 0 14px 35px rgba(15, 23, 42, .25);
+      transition: .25s ease;
+      font-size: .82rem;
     }
 
-    .print-btn:hover {
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 24px 60px rgba(37, 99, 235, .45);
+    .action-btn:hover {
+      transform: translateY(-3px);
     }
 
-    .animate-rise,
-    .timeline article {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-
-    .animate-rise.visible,
-    .timeline article.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .delay-150 {
-      transition-delay: .15s;
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media print {
@@ -417,8 +376,7 @@
         background: white;
       }
 
-      .fixed,
-      .print-btn {
+      .fixed {
         display: none !important;
       }
 
@@ -427,24 +385,14 @@
         max-width: none;
       }
 
-      .resume-shell,
-      .glass-card,
+      .card,
       .content-card,
       .timeline article {
         box-shadow: none !important;
-        border-color: #e2e8f0 !important;
-      }
-
-      .animate-rise,
-      .timeline article {
-        opacity: 1 !important;
-        transform: none !important;
-      }
-
-      .timeline article {
         break-inside: avoid;
       }
     }
   </style>
+
 </body>
 </html>
