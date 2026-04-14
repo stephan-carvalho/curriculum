@@ -1,231 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Álvaro Stephan Eustaquio de Carvalho | Currículo</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #222;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 32px;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-    }
-
-    header {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 20px;
-      margin-bottom: 24px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    .contact {
-      font-size: 0.95rem;
-      color: #444;
-    }
-
-    section {
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-      color: #111;
-      border-left: 4px solid #222;
-      padding-left: 10px;
-    }
-
-    h3 {
-      font-size: 1rem;
-      margin-bottom: 6px;
-    }
-
-    .job {
-      margin-bottom: 16px;
-    }
-
-    .period {
-      color: #666;
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skill {
-      background: #efefef;
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: 0.92rem;
-    }
-
-    footer {
-      margin-top: 24px;
-      font-size: 0.9rem;
-      color: #666;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 1.6rem;
-      }
-    }
-  </style>
+  <title>Meu Currículo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-  <main class="container">
-    <header>
-      <h1>Álvaro Stephan Eustaquio de Carvalho</h1>
-      <p class="subtitle">Currículo profissional</p>
-      <p class="contact">
-        São Paulo - SP<br>
-        Telefone: (11) 91931-0062<br>
-        Email: stephancarvalho26@gmail.com
-      </p>
-    </header>
+<body class="bg-zinc-100 text-zinc-900">
+  <main class="max-w-3xl mx-auto my-10 bg-white shadow-lg rounded-2xl p-8">
+    <h1 class="text-3xl font-bold">Álvaro Stephan Eustaquio de Carvalho</h1>
+    <p class="mt-2 text-zinc-600">São Paulo - SP</p>
+    <p class="text-zinc-600">(11) 91931-0062 • stephancarvalho26@gmail.com</p>
 
-    <section>
-      <h2>Objetivo</h2>
-      <p>
+    <section class="mt-8">
+      <h2 class="text-xl font-semibold border-b pb-2">Objetivo</h2>
+      <p class="mt-3">
         Atuar em áreas operacionais e de atendimento ao cliente, contribuindo com organização,
-        agilidade, resolução de problemas e foco em resultados.
+        agilidade e foco em resultados.
       </p>
     </section>
 
-    <section>
-      <h2>Formação Acadêmica</h2>
-      <div class="job">
-        <h3>Ensino Médio Integrado ao Técnico em Informática</h3>
-        <p class="period">ETEC Paulistano — Conclusão em 2017</p>
+    <section class="mt-8">
+      <h2 class="text-xl font-semibold border-b pb-2">Habilidades</h2>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="bg-zinc-200 px-3 py-1 rounded-full text-sm">Atendimento ao cliente</span>
+        <span class="bg-zinc-200 px-3 py-1 rounded-full text-sm">Organização</span>
+        <span class="bg-zinc-200 px-3 py-1 rounded-full text-sm">Vendas</span>
+        <span class="bg-zinc-200 px-3 py-1 rounded-full text-sm">Excel intermediário</span>
       </div>
     </section>
-
-    <section>
-      <h2>Experiência Profissional</h2>
-
-      <div class="job">
-        <h3>Comércio Familiar – Pizzaria</h3>
-        <p class="period">2020 – 2025</p>
-        <ul>
-          <li>Atendimento ao cliente e suporte no salão</li>
-          <li>Preparação de pizzas e organização da cozinha</li>
-          <li>Recebimento e conferência de mercadorias</li>
-          <li>Limpeza, padronização e apoio geral à operação</li>
-          <li>Atuação multifuncional em diferentes etapas do negócio</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Servente de Pedreiro (Informal)</h3>
-        <p class="period">2019 – 2020</p>
-        <ul>
-          <li>Apoio em atividades de obra</li>
-          <li>Organização de materiais e execução de tarefas operacionais</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Feirante</h3>
-        <p class="period">2019</p>
-        <ul>
-          <li>Montagem de barracas e organização do espaço</li>
-          <li>Atendimento ao público e vendas diretas</li>
-          <li>Trabalho com metas e abordagem ativa de clientes</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Operador de Telemarketing Ativo – Cobrança</h3>
-        <p class="period">2018</p>
-        <ul>
-          <li>Negociação de dívidas de clientes</li>
-          <li>Atendimento sob pressão com foco em metas</li>
-          <li>Comunicação persuasiva e resolução de objeções</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Auxiliar de Estoque (Informal)</h3>
-        <p class="period">2017 – 2018</p>
-        <ul>
-          <li>Controle e organização de estoque</li>
-          <li>Abastecimento de lojas e reposição de mercadorias</li>
-          <li>Transporte e conferência de produtos</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Habilidades</h2>
-      <div class="skills">
-        <span class="skill">Atendimento ao cliente</span>
-        <span class="skill">Comunicação</span>
-        <span class="skill">Trabalho em equipe</span>
-        <span class="skill">Organização</span>
-        <span class="skill">Resolução de problemas</span>
-        <span class="skill">Controle de estoque</span>
-        <span class="skill">Vendas</span>
-        <span class="skill">Metas e resultados</span>
-        <span class="skill">Excel intermediário</span>
-        <span class="skill">Google Sheets intermediário</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Informações Adicionais</h2>
-      <ul>
-        <li>Perfil versátil e adaptável</li>
-        <li>Aprendizado rápido</li>
-        <li>Interesse em atendimento, vendas, logística e operação</li>
-      </ul>
-    </section>
-
-    <footer>
-      Última atualização do currículo em 2026
-    </footer>
   </main>
 </body>
 </html>
