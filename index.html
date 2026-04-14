@@ -11,36 +11,67 @@
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"]
+          },
           colors: {
-            primary: "#0f172a",
+            ink: "#0f172a",
             accent: "#2563eb"
+          },
+          boxShadow: {
+            soft: "0 24px 80px rgba(15, 23, 42, .14)"
           }
         }
       }
-    }
+    };
   </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-slate-100 text-slate-800">
-  <main class="max-w-5xl mx-auto px-5 py-10">
+<body class="min-h-screen bg-slate-950 text-slate-800 font-sans overflow-x-hidden">
 
-    <section class="bg-white rounded-3xl shadow-xl overflow-hidden">
-      <header class="bg-gradient-to-br from-slate-950 to-blue-800 text-white p-8 md:p-12">
-        <p class="text-blue-200 uppercase tracking-[0.3em] text-sm mb-3">Currículo Profissional</p>
-        <h1 class="text-3xl md:text-5xl font-bold leading-tight">
-          Álvaro Stephan Eustaquio de Carvalho
-        </h1>
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#1d4ed8,transparent_35%),radial-gradient(circle_at_bottom_right,#0ea5e9,transparent_30%),linear-gradient(135deg,#020617,#0f172a_55%,#111827)]"></div>
+    <div class="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:48px_48px]"></div>
+  </div>
 
-        <div class="mt-6 grid md:grid-cols-3 gap-3 text-sm text-blue-50">
-          <p>📍 São Paulo – SP</p>
-          <p>📞 (11) 91931-0062</p>
-          <p>✉️ <a class="underline" href="mailto:stephancarvalho26@gmail.com">stephancarvalho26@gmail.com</a></p>
+  <main class="max-w-6xl mx-auto px-5 py-8 md:py-12">
+    <section class="resume-shell rounded-[2rem] overflow-hidden shadow-soft border border-white/15 bg-white/90 backdrop-blur-xl">
+
+      <header class="relative overflow-hidden bg-slate-950 text-white p-8 md:p-12">
+        <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-28 -left-20 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 grid lg:grid-cols-[1fr_auto] gap-8 items-center">
+          <div class="animate-rise">
+            <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-blue-100">
+              Currículo Profissional
+            </p>
+
+            <h1 class="mt-6 text-4xl md:text-6xl font-black tracking-tight leading-[1.02]">
+              Álvaro Stephan<br class="hidden md:block" />
+              <span class="text-blue-300">Eustaquio de Carvalho</span>
+            </h1>
+
+            <p class="mt-5 max-w-2xl text-slate-300 text-lg leading-relaxed">
+              Atendimento ao cliente · Operação · Vendas · Apoio logístico
+            </p>
+          </div>
+
+          <div class="animate-rise delay-150 grid gap-3 text-sm">
+            <a class="contact-pill" href="https://www.google.com/maps/search/São+Paulo+SP" target="_blank">📍 São Paulo – SP</a>
+            <a class="contact-pill" href="tel:+5511919310062">📞 (11) 91931-0062</a>
+            <a class="contact-pill" href="mailto:stephancarvalho26@gmail.com">✉️ stephancarvalho26@gmail.com</a>
+          </div>
         </div>
       </header>
 
-      <div class="p-6 md:p-10 grid lg:grid-cols-3 gap-8">
-        <aside class="lg:col-span-1 space-y-6">
-          <section class="card">
+      <div class="p-6 md:p-10 grid lg:grid-cols-[340px_1fr] gap-8">
+        <aside class="space-y-5">
+          <section class="glass-card animate-rise">
             <h2>Objetivo</h2>
             <p>
               Atuar em funções de atendimento ao cliente, operação, vendas e apoio logístico,
@@ -48,24 +79,24 @@
             </p>
           </section>
 
-          <section class="card">
+          <section class="glass-card animate-rise">
             <h2>Formação</h2>
-            <p class="font-semibold">Ensino Médio Integrado ao Técnico em Informática</p>
+            <p class="font-bold text-slate-950">Ensino Médio Integrado ao Técnico em Informática</p>
             <p>ETEC Paulistano</p>
-            <p class="text-slate-500">Conclusão em 2017</p>
+            <p class="text-slate-500 font-medium">Conclusão em 2017</p>
           </section>
 
-          <section class="card">
-            <h2>Habilidades</h2>
+          <section class="glass-card animate-rise">
+            <h2>Competências</h2>
             <div class="flex flex-wrap gap-2">
-              <span>Atendimento ao cliente</span>
-              <span>Comunicação clara</span>
+              <span>Atendimento</span>
+              <span>Comunicação</span>
               <span>Vendas</span>
               <span>Metas</span>
               <span>Estoque</span>
               <span>Reposição</span>
               <span>Organização</span>
-              <span>Trabalho em equipe</span>
+              <span>Equipe</span>
               <span>Excel</span>
               <span>Google Sheets</span>
               <span>HTML</span>
@@ -74,7 +105,7 @@
             </div>
           </section>
 
-          <section class="card">
+          <section class="glass-card animate-rise">
             <h2>Informações adicionais</h2>
             <ul>
               <li>Disponibilidade para funções operacionais, atendimento, vendas e logística.</li>
@@ -84,10 +115,10 @@
           </section>
         </aside>
 
-        <section class="lg:col-span-2 space-y-8">
-          <section>
+        <section class="space-y-8">
+          <section class="content-card animate-rise">
             <h2 class="section-title">Resumo Profissional</h2>
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-slate-700">
               Profissional com experiência em atendimento ao público, vendas, organização operacional,
               estoque, recebimento de mercadorias e apoio geral ao funcionamento do negócio. Possui
               vivência em ambientes dinâmicos e exigentes, com atuação em comércio familiar, feira,
@@ -96,7 +127,7 @@
           </section>
 
           <section>
-            <h2 class="section-title">Experiência Profissional</h2>
+            <h2 class="section-title mb-5">Experiência Profissional</h2>
 
             <div class="timeline">
               <article>
@@ -166,95 +197,219 @@
     </section>
   </main>
 
-  <button
-    onclick="window.print()"
-    class="fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white px-5 py-3 rounded-full shadow-lg transition">
+  <button onclick="window.print()" class="print-btn">
+    <span>📄</span>
     Imprimir / PDF
   </button>
 
+  <script>
+    const animatedItems = document.querySelectorAll(".animate-rise, .timeline article");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.12 });
+
+    animatedItems.forEach(item => observer.observe(item));
+  </script>
+
   <style>
-    .card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 1.25rem;
-      padding: 1.25rem;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .card h2,
+    .contact-pill {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .8rem 1rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .15);
+      color: #e0f2fe;
+      font-weight: 700;
+      backdrop-filter: blur(12px);
+      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+    }
+
+    .contact-pill:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, .16);
+      border-color: rgba(147, 197, 253, .7);
+    }
+
+    .glass-card,
+    .content-card,
+    .timeline article {
+      background: rgba(255, 255, 255, .78);
+      border: 1px solid rgba(226, 232, 240, .9);
+      border-radius: 1.5rem;
+      box-shadow: 0 14px 38px rgba(15, 23, 42, .06);
+      backdrop-filter: blur(16px);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .glass-card,
+    .content-card {
+      padding: 1.35rem;
+    }
+
+    .glass-card:hover,
+    .content-card:hover,
+    .timeline article:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 55px rgba(15, 23, 42, .11);
+      border-color: #bfdbfe;
+    }
+
+    .glass-card h2,
     .section-title {
-      font-size: 1rem;
-      font-weight: 800;
+      font-size: .82rem;
+      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: .12em;
+      letter-spacing: .16em;
       color: #1d4ed8;
-      margin-bottom: .9rem;
     }
 
-    .card p,
-    .card li {
+    .glass-card h2 {
+      margin-bottom: .85rem;
+    }
+
+    .glass-card p,
+    .glass-card li {
       font-size: .95rem;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    .card span {
-      background: white;
+    .glass-card span {
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
       border: 1px solid #dbeafe;
       color: #1e3a8a;
-      padding: .4rem .7rem;
+      padding: .45rem .72rem;
       border-radius: 999px;
-      font-size: .85rem;
-      font-weight: 600;
+      font-size: .82rem;
+      font-weight: 800;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+    .glass-card span:hover {
+      transform: scale(1.04);
+      border-color: #60a5fa;
     }
 
     ul {
-      list-style: disc;
-      padding-left: 1.2rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.15rem;
+      margin-bottom: .45rem;
+      line-height: 1.6;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .72em;
+      width: .42rem;
+      height: .42rem;
+      border-radius: 999px;
+      background: #2563eb;
     }
 
     .timeline {
-      border-left: 3px solid #bfdbfe;
-      padding-left: 1.5rem;
+      position: relative;
       display: grid;
-      gap: 1.8rem;
+      gap: 1.25rem;
+      padding-left: 1.3rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: .18rem;
+      top: .5rem;
+      bottom: .5rem;
+      width: 3px;
+      border-radius: 999px;
+      background: linear-gradient(to bottom, #2563eb, #93c5fd, transparent);
     }
 
     .timeline article {
       position: relative;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 1.25rem;
-      padding: 1.4rem;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+      padding: 1.45rem;
     }
 
     .timeline article::before {
       content: "";
       position: absolute;
-      left: -2.05rem;
-      top: 1.4rem;
-      width: .9rem;
-      height: .9rem;
+      left: -1.55rem;
+      top: 1.6rem;
+      width: .85rem;
+      height: .85rem;
       background: #2563eb;
       border: 3px solid white;
       border-radius: 999px;
-      box-shadow: 0 0 0 3px #bfdbfe;
+      box-shadow: 0 0 0 4px #dbeafe;
     }
 
     .timeline h3 {
-      font-size: 1.15rem;
-      font-weight: 800;
+      font-size: 1.12rem;
+      font-weight: 900;
       color: #0f172a;
+      letter-spacing: -.02em;
     }
 
     .role {
       color: #2563eb;
-      font-weight: 700;
-      margin: .25rem 0 .8rem;
+      font-weight: 800;
+      margin: .25rem 0 .85rem;
+      font-size: .95rem;
     }
 
-    .timeline li {
-      margin-bottom: .35rem;
-      line-height: 1.55;
+    .print-btn {
+      position: fixed;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      font-weight: 900;
+      padding: .9rem 1.2rem;
+      border-radius: 999px;
+      box-shadow: 0 16px 40px rgba(37, 99, 235, .35);
+      transition: transform .25s ease, box-shadow .25s ease;
+      z-index: 50;
+    }
+
+    .print-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 24px 60px rgba(37, 99, 235, .45);
+    }
+
+    .animate-rise,
+    .timeline article {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .animate-rise.visible,
+    .timeline article.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-150 {
+      transition-delay: .15s;
     }
 
     @media print {
@@ -262,8 +417,9 @@
         background: white;
       }
 
-      button {
-        display: none;
+      .fixed,
+      .print-btn {
+        display: none !important;
       }
 
       main {
@@ -271,8 +427,18 @@
         max-width: none;
       }
 
-      section {
+      .resume-shell,
+      .glass-card,
+      .content-card,
+      .timeline article {
         box-shadow: none !important;
+        border-color: #e2e8f0 !important;
+      }
+
+      .animate-rise,
+      .timeline article {
+        opacity: 1 !important;
+        transform: none !important;
       }
 
       .timeline article {
